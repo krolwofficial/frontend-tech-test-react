@@ -1,0 +1,15 @@
+.grid {
+  display: grid;
+  grid-auto-rows: 1fr;
+  grid-gap: 1rem; /* I would much more prefer rem over px */
+
+  /*  Here I will add config to media queries variables */
+
+  @media (min-width: 600px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (min-width: 900px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
